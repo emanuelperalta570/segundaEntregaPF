@@ -35,6 +35,8 @@ li{
 	background-color: black;
 }
 
+
+
 .header{
 	grid-area: header;
 	display: flex;
@@ -74,6 +76,7 @@ li{
 	bottom: 0;
 	min-width: 100%;
 	min-height: 100%;
+	background-color: black;
 }
 
 a:hover{
@@ -269,6 +272,10 @@ body main div h1{
 	padding: 10px;
 	padding-left: 100px;
 }
+
+
+
+
 @media only screen and (max-width:550px){
 	.container{
 		display: grid;
