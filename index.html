@@ -9,52 +9,73 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lato:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
-<body class="container">
+<body class="container-fluid">
 	<!-- Inicio de Encabezado -->
-	<header class="header">
+	<header class="row">
 		<!-- LOGO -->
-		 <div class="logo">
+		 <div class="col 6">
 			<a href="index.html">
 			<img src="assets/img/logo/logo_copados.png" alt="logo" class="logo_copados">
 			</a>
 		</div>
 		<!-- Cierre logo -->
 		<!-- Inicio Nav -->
-		<nav>
+		<nav class="col 6 flex-menu">
 			<!-- Lista con viñetas -->
-			<ul class="menu">				
-				<li><a href="#">HOME</a></li>
-				<li><a href="views/socios.html">SOCIOS</a></li>
-				<li><a href="views/destacados.html">DESTACADOS</a></li>
-				<li><a href="views/nuestras_tiendas.html">NUESTRAS TIENDAS</a></li>
-				<li><a href="views/contacto.html">CONTACTO</a></li>
-			</ul>
+			<nav class="navbar navbar-expand-lg navbar-light background-color-black">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+					  </li>
+					<li class="nav-item active">
+					  <a class="nav-link" href="views/socios.html">SOCIOS <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="views/destacados.html">DESTACADOS<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="views/nuestras_tiendas.html">NUESTRAS TIENDAS<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="views/contacto.html">CONTACTO<span class="sr-only">(current)</span></a>
+					</li>
+				  </ul>
+				</div>
+			  </nav>
 		</nav>
 		<!-- Cierre nav -->
 	</header>
 	<!-- Cierre encabezado -->
 	<!-- Inicio contenido -->
-	<main class="main">
-		<div class="textBienv animate__animated  animate__backInLeft">
+	<main class="row">
+		<div class="col-6 col col-12 textBienv animate__animated  animate__backInLeft">
 			<h1>¡BIENVENIDOS A NUESTRA TIENDA DE BEBIDAS!</h1>
 			<p>Nuestro horario de atencion es de Lunes a viernes de 17 a 22 y sabados de 10 a 22hs!
-				Te esperamos !
 			</p>	
+			<p>¡Te esperamos !</p>
 		</div>
-	</main>
-	<main class="main2">
-		<video autoplay muted loop class="myVideo">
-			<source src="assets/video/video-copados.mp4" type="video/mp4">
-		</video>
+	
+		<div class="col-12 col-lg-12">
+			<video autoplay muted loop class="myVideo">
+				<source src="assets/video/video-copados.mp4" type="video/mp4">
+			</video>
+		</div>
 	</main>
 	<!-- cierre contenido -->
 	<!-- inicio footer -->
-	<footer class="footer">
+	<footer class="row">
 		<!-- REDES SOCIALES -->
-		<ul>
-			<li><a href="https://www.instagram.com/copa2_ok/">
+		<ul class="col-12 flex-footer">
+			<li ><a href="https://www.instagram.com/copa2_ok/">
 				<img src="https://icongr.am/fontawesome/instagram.svg?size=75&color=bc1a1a" alt="logoinsta">
 			</a></li>
 			<li><a href="https://www.facebook.com/Copa2RamosMejia">
@@ -73,5 +94,7 @@
 	</footer>
 	<script src="js/wow.min.js"></script>
 	<script> new WOW().init();</script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

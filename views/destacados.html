@@ -9,119 +9,111 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Lato:ital@1&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
-<body class="container-destacados">
+<body class="container-fluid">
 	<!-- Inicio de Encabezado -->
-	<header class="header">
+	<header class="row">
 		<!-- LOGO -->
-		<div class="img">
-			<a href="../index.html">
+		 <div class="col 6">
+			<a href="index.html">
 			<img src="../assets/img/logo/logo_copados.png" alt="logo" class="logo_copados">
 			</a>
 		</div>
 		<!-- Cierre logo -->
 		<!-- Inicio Nav -->
-		<nav >
+		<nav class="col 6 flex-menu">
 			<!-- Lista con viñetas -->
-			<ul class="menu">
-				<li><a href="../index.html">HOME</a></li>
-				<li><a href="socios.html">SOCIOS</a></li>
-				<li><a href="#">DESTACADOS</a></li>
-				<li><a href="nuestras_tiendas.html">NUESTRAS TIENDAS</a></li>
-				<li><a href="contacto.html">CONTACTO</a></li>
-			</ul>
+			<nav class="navbar navbar-expand-lg navbar-light background-color-black">
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+					  </li>
+					<li class="nav-item active">
+					  <a class="nav-link" href="socios.html">SOCIOS <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">DESTACADOS<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="nuestras_tiendas.html">NUESTRAS TIENDAS<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="contacto.html">CONTACTO<span class="sr-only">(current)</span></a>
+					</li>
+				  </ul>
+				</div>
+			  </nav>
 		</nav>
 		<!-- Cierre nav -->
 	</header>
 	<!-- Cierre encabezado -->
 	<!-- Inicio contenido -->
-	<main class="main">
+	<main class="row">
 		<div>
-			<h1 class="tituloDestacados">¡CONOCE NUESTRAS BEBIDAS MAS DESTACADAS!</h1>
+			<h1 class="col-12 text-center">¡CONOCE NUESTRAS BEBIDAS MAS DESTACADAS!</h1>
 		</div>	
-		<section class="gridDestacados">
-			<!--NOMBRES BEBIDAS-->
-			<div class="nombreBebida-uno">
-				<h3>GIN ESPAÑOL MARE</h3>
-			</div>
-			<div class="nombreBebida-dos">
-				<h3>GIN ESCOCES THE BOTANIST</h3>
-			</div>
-			<div class="nombreBebida-tres">
-				<h3>GIN ALEMAN MONKEY 47 SCHWARZWALD</h3>
-			</div>
-			<div class="nombreBebida-cuatro">
-				<h3>WHISKY AMERICANO THE GLENLIVET 12 AÑOS</h3>
-			</div>
-			<div class="nombreBebida-cinco">
-				<h3>WHISKY IRLANDES JAMESON</h3>
-			</div>
-			<div class="nombreBebida-seis">
-				<h3>ABSENTA FRANCES ABSENTE</h3>
-			</div>
-			<div class="nombreBebida-siete">
-				<h3>LICOR DE ALMENDRAS ITALIANO AMARETTO DISARONNO</h3>
-			</div>
-			<div class="nombreBebida-ocho">
-				<h3>LICOR DE AVELLANAS ITALIANO FRANGELICO</h3>
-			</div>
-			<!--IMAGENES BEBIDAS-->
-			<div class="imagenBebida-uno animate__animated animate__fadeIn">
+		<section class="row">
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				
 				<img src="../assets/img/destacados/destacados00.jpg" alt="ginmare" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-dos animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados01.jpg" alt="thebotanist" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-tres animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados02.jpg" alt="jameson" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-cuatro animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados03.jpg" alt="absente" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-cinco animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados04.jpg" alt="ginmare" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-seis animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados05.jpg" alt="thebotanist" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-siete animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados06.jpg" alt="ginmare" class="imgdestacados--size">
-			</div>
-			<div class="imagenBebida-ocho animate__animated animate__fadeIn">
-				<img src="../assets/img/destacados/destacados07.jpg" alt="thebotanist" class="imgdestacados--size">
-			</div>
-			<!--EPIGRAFES-->
-			<div class="epigrafe-uno">
+				<h3 class="tituloBebida">GIN ESPAÑOL MARE</h3>
 				<p class="epigrafe--tamaño">Gin Mare es una ginebra inspirada en la cultura mediterránea y elaborada con los mejores botánicos de la región como la aceituna arbequina, el tomillo, la albahaca y el romero. Servir sobre hielo con agua tónica.</p>
 			</div>
-			<div class="epigrafe-dos">
-				<p class="epigrafe--tamaño">22 botánicos locales recolectados a mano aumentan delicadamente nueve bayas, cortezas, semillas y cáscaras durante una destilación  lenta. La primera ginebra seca de Islay es una expresión del corazón y el alma de la remota isla escocesa. El largo y complejo proceso de creación de The Botanist, desde la recolección de los productos botánicos de la isla hasta su destilación y embotellado, conduce a una ginebra de increíble complejidad, profundidad y sabor.</p>
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				
+				<img src="../assets/img/destacados/destacados01.jpg" alt="thebotanist" class="imgdestacados--size">
+				<h3 class="tituloBebida">GIN ESCOCES THE BOTANIST</h3>
+				<p class="epigrafe--tamaño">22 botánicos locales recolectados a mano aumentan delicadamente nueve bayas, cortezas, semillas y cáscaras durante una destilación  lenta. La primera ginebra seca de Islay es una expresión del corazón y el alma de la remota isla escocesa.</p>
 			</div>
-			<div class="epigrafe-tres">
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				
+				<img src="../assets/img/destacados/destacados02.jpg" alt="monkey47" class="imgdestacados--size">
+				<h3 class="tituloBebida ">GIN ALEMAN MONKEY 47 SCHWARZWALD</h3>
 				<p class="epigrafe--tamaño">Con la esencia pura y distintiva del enebro tiene una nota fuerte y fresca a cítricos, un aroma dulce y floral, un toque de pimienta, un sutil amargo de frutas y profunda y armoniosa complejidad.</p>
-			</div>
-			<div class="epigrafe-cuatro">
+				</div>
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				
+				<img src="../assets/img/destacados/destacados03.jpg" alt="glenlivet" class="imgdestacados--size">
+				<h3 class="tituloBebida">WHISKY AMERICANO THE GLENLIVET 12 AÑOS</h3>
 				<p class="epigrafe--tamaño">Representando el estilo característico de The Glenlivet, esta malta clásica se madura primero en roble tradicional, antes de pasar un tiempo en barricas de roble americano que imparten notas de vainilla y le dan al whisky su suavidad distintiva</p>
-			</div>	
-			<div class="epigrafe-cinco">
-				<p class="epigrafe--tamaño">Jameson Irish Whiskey es un whiskey de mezcla irlandés. Destilado tres veces para obtener su suavidad característica. Para luego pasar por barricas de roble por al menos cuatro años.</p>
-			</div>
-			<div class="epigrafe-seis">
-				<p class="epigrafe--tamaño">Es de Origen francés siendo el primer absenta legal que contiene tujona lanzado en 1999 en Europa y Estados Unidos. Un absenta que marca tendencia destacándose por su calidad, frescura y delicadeza. Para beber con hielo también siendo muy utilizado en el mundo de la coctelería.</p>
-			</div>
-			<div class="epigrafe-siete">
-				<p class="epigrafe--tamaño">Aterciopelado en el gusto e inconfundible en el aroma, DISARONNO se ha ganado la reputación de licor italiano más vendido en el mundo, tal como indica con orgullo su etiqueta.</p>
-			</div>
-			<div class="epigrafe-ocho">
-				<p class="epigrafe--tamaño">Frangelico es un licor de avellana premium. Es perfecto con hielo, en el café o tambien usado en cocteleria. Elaborado con avellanas Tonda Gentile silvestres de la región de Piamonte del norte de Italia, Frangelico presenta un pronunciado pero delicado sabor a avellana complementado con toques de vainilla y chocolate negro.</p>
 			</div>
 		</section>
+		<section class="row">
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				
+				<img src="../assets/img/destacados/destacados04.jpg" alt="ginmare" class="imgdestacados--size">
+				<h3 class="tituloBebida">WHISKY IRLANDES JAMESON</h3>
+				<p class="epigrafe--tamaño">Jameson Irish Whiskey es un whiskey de mezcla irlandés. Destilado tres veces para obtener su suavidad característica. Para luego pasar por barricas de roble por al menos cuatro años.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				<img src="../assets/img/destacados/destacados05.jpg" alt="thebotanist" class="imgdestacados--size">
+				<h3 class="tituloBebida">ABSENTA FRANCES ABSENTE</h3>
+				<p class="epigrafe--tamaño">Es de Origen francés siendo el primer absenta legal que contiene tujona lanzado en 1999 en Europa y Estados Unidos. Un absenta que marca tendencia destacándose por su calidad, frescura y delicadeza. Para beber con hielo también siendo muy utilizado en el mundo de la coctelería.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				<img src="../assets/img/destacados/destacados06.jpg" alt="ginmare" class="imgdestacados--size">
+				<h3 class="tituloBebida">LICOR DE ALMENDRAS AMARETTO DISARONNO</h3>
+				<p class="epigrafe--tamaño">Aterciopelado en el gusto e inconfundible en el aroma, DISARONNO se ha ganado la reputación de licor italiano más vendido en el mundo, tal como indica con orgullo su etiqueta.</p>
+			</div>
+			<div class="col-12 col-md-6 col-lg-3 flexBebida animate__animated animate__fadeIn">
+				<img src="../assets/img/destacados/destacados07.jpg" alt="thebotanist" class="imgdestacados--size">
+				<h3 class="tituloBebida">LICOR DE AVELLANAS ITALIANO FRANGELICO</h3>
+				<p class="epigrafe--tamaño">Frangelico es un licor de avellana premium. Es perfecto con hielo, en el café o tambien usado en cocteleria. Elaborado con avellanas Tonda Gentile silvestres de la región de Piamonte del norte de Italia, Frangelico presenta un pronunciado pero delicado sabor a avellana complementado con toques de vainilla y chocolate negro.</p>
+			</div>
+		</section>	
 	</main>	
-	<footer class="footer">
+	<footer class="row">
 		<!-- REDES SOCIALES -->
-		<ul>
-			<li><a href="https://www.instagram.com/copa2_ok/">
+		<ul class="col-12 flex-footer">
+			<li ><a href="https://www.instagram.com/copa2_ok/">
 				<img src="https://icongr.am/fontawesome/instagram.svg?size=75&color=bc1a1a" alt="logoinsta">
 			</a></li>
 			<li><a href="https://www.facebook.com/Copa2RamosMejia">
@@ -136,9 +128,11 @@
 			<li><a href="https://msng.link/o/?Copa2RamosMejia=fm">
 				<img src="https://icongr.am/jam/messenger.svg?size=75&color=bc1a1a" alt="logomess">
 			</a></li>
-		</ul>			
+		</ul>		
 	</footer>
 	<script src="js/wow.min.js"></script>
 	<script> new WOW().init();</script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
